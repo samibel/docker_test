@@ -8,5 +8,4 @@ service:
 before_install:
     - docker build -t samibel/test_react -f dockerfile.dev .
 script:
-  - docker run -e CI=true samibel/test_react npm run test 
-  
+    - docker run -e CI=true samibel/test_react npm run test
