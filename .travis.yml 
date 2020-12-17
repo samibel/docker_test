@@ -8,4 +8,4 @@ service:
 before_install:
     - docker build -t test_react -f dockerfile.dev .
 script:
-    - docker run -e CI=true test_react npm run test
+    - docker run -e CI=true test_react npm run test 
