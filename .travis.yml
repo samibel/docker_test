@@ -14,11 +14,12 @@ deploy:
   provider: elasticbeanstalk
   region: 'us-east-2'
   app: 'demo_react_docker'
-  env: 'demo_react_docker-env'
+  env: 'DemoReactDocker-env'
   bucket_name: 'elasticbeanstalk-us-east-2-318386363514'
   bucket_path: 'demo_react_docker'
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
+  access_key_id:
+    secure: $AWS_ACCESS_KEY
   secret_access_key:
     secure: $AWS_SECRET_KEY
